@@ -10,6 +10,7 @@ from urllib.parse import quote
 
 REPO = os.environ["GITHUB_REPOSITORY"]
 BASE = f"https://github.com/{REPO}"
+PROJECT = "https://github.com/orgs/monin-1-lab/projects/2"
 TEAM = "PUL-Web"
 OWNER = "Argonaut16"
 AREA = "area: PUL-Web"
@@ -56,13 +57,20 @@ def body(key, description, hours=None):
 def scan():
     labels = quote(AREA)
     result = {}
-    for issue in api(f"issues?state=all&per_page=100&labels={labels}"):
-        match = MARKER.search(issue.get("body") or "")
-        if match:
-            if match[1] in result:
-                raise ValueError("Duplicate PUL-Web issue: " + match[1])
-            result[match[1]] = issue
-    return result
+    page = 1
+    while True:
+        batch = api(f"issues?state=all&per_page=100&page={page}&labels={labels}")
+        for issue in batch:
+            if "pull_request" in issue:
+                continue
+            match = MARKER.search(issue.get("body") or "")
+            key = match[1] if match else f"issue-{issue['number']}"
+            if key in result:
+                raise ValueError("Duplicate PUL-Web issue: " + key)
+            result[key] = issue
+        if len(batch) < 100:
+            return result
+        page += 1
 
 
 def seed():
@@ -142,14 +150,17 @@ def dashboard(rows):
     wip = [r for r in pbi if "QA: Doing" in names(r)]
     task_query = query('label:"type: Task"')
     lines = ["# Обучение продукту", "", "Панель команды **PUL-Web** · Sprint 2 · 23 ноября — 9 декабря 2026 г.", "",
+             f"[Канбан команды]({PROJECT}/views/1) · [Веб-задачи]({PROJECT}/views/2) · [Планирование Sprint 2](sprint-2.md)", "",
              "## Обзор спринта", "", "Оценка Effort отражает относительный объём пользовательских историй. Часы ниже относятся к оставшейся работе по задачам.", "",
+             f"[Диаграмма Effort по стадиям]({PROJECT}/insights/2)", "",
              "| Стадия истории | Effort |","| --- | ---: |", *[f"| {s} | {v} |" for s,v in sorted(effort.items())],
              f"| **Всего** | **{sum(effort.values())}** |","", "## Ёмкость спринта", "",
              f"График разработки — 1 ч в рабочий день, понедельник–пятница. В учебном календаре с 30 ноября по 4 декабря отведено пять рабочих дней отсутствия. Из {days} рабочих дней доступны {capacity}.",
              "", "| Доступно | Осталось по задачам | Перегрузка |","| ---: | ---: | ---: |",
              f"| {capacity} ч | {hours} ч | {max(0,hours-capacity)} ч |", "",
+             f"[Оставшаяся работа по исполнителям]({PROJECT}/insights/3)", "",
              "При первом планировании разработка страницы занимала 5 ч, проектирование запроса — 3 ч. После пересмотра оценка страницы выросла до 8 ч. Обе задачи включены в Sprint 2.", "",
-             "## Веб-задачи — по назначению","",f"[Веб-задачи]({task_query}) · общий запрос по типу Task и области PUL-Web.", "",
+             "## Веб-задачи — по назначению","",f"[Общий запрос в Issues]({task_query}) · [Сохранённое представление]({PROJECT}/views/2) · [Диаграмма по исполнителям]({PROJECT}/insights/1)", "",
              "| Задача | Исполнитель | Активность | Остаток |","| --- | --- | --- | ---: |"]
     for r in tasks:
         who = ", ".join(a["login"] for a in r["assignees"]) or "Без назначения"
@@ -195,6 +206,6 @@ def dashboard(rows):
 
 if __name__ == "__main__":
     items = scan() if os.environ.get("GITHUB_EVENT_NAME")=="issues" else seed()
-    if set(items) != {r[0] for r in ITEMS}:
+    if not {r[0] for r in ITEMS}.issubset(items):
         raise ValueError("PUL-Web backlog is incomplete")
     dashboard(items)
