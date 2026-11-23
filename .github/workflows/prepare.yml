@@ -1,0 +1,51 @@
+name: Подготовка стенда Parts Unlimited
+on:
+  workflow_dispatch:
+  push:
+    paths: ['.github/workflows/prepare.yml']
+permissions:
+  contents: read
+concurrency:
+  group: parts-unlimited-seed
+  cancel-in-progress: false
+jobs:
+  issues:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Создать спринты и рабочие элементы
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 seed.py
+  source:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/checkout@v4
+        with:
+          repository: microsoft/PartsUnlimitedE2E
+          ref: 221fab958efbdf8d05fd5b01466df2a2f46d5231
+          path: upstream
+          persist-credentials: false
+      - name: Импортировать исходный код магазина
+        run: |
+          if test -f app/PartsUnlimited.sln; then exit 0; fi
+          cp -R upstream/PartsUnlimited-aspnet45 app
+          cp upstream/LICENSE app/LICENSE
+          test -f app/PartsUnlimited.sln
+          test -d app/src/PartsUnlimitedWebsite
+          git add -- app
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'Добавить исходный код и тесты магазина Parts Unlimited'
+          git pull --rebase origin main
+          git push origin HEAD:main
