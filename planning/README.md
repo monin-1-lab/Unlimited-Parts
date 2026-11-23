@@ -2,9 +2,13 @@
 
 Панель команды **PUL-Web** · Sprint 2 · 23 ноября — 9 декабря 2026 г.
 
+[Канбан команды](https://github.com/orgs/monin-1-lab/projects/2/views/1) · [Веб-задачи](https://github.com/orgs/monin-1-lab/projects/2/views/2) · [Планирование Sprint 2](sprint-2.md)
+
 ## Обзор спринта
 
 Оценка Effort отражает относительный объём пользовательских историй. Часы ниже относятся к оставшейся работе по задачам.
+
+[Диаграмма Effort по стадиям](https://github.com/orgs/monin-1-lab/projects/2/insights/2)
 
 | Стадия истории | Effort |
 | --- | ---: |
@@ -20,11 +24,13 @@
 | ---: | ---: | ---: |
 | 8 ч | 11 ч | 3 ч |
 
+[Оставшаяся работа по исполнителям](https://github.com/orgs/monin-1-lab/projects/2/insights/3)
+
 При первом планировании разработка страницы занимала 5 ч, проектирование запроса — 3 ч. После пересмотра оценка страницы выросла до 8 ч. Обе задачи включены в Sprint 2.
 
 ## Веб-задачи — по назначению
 
-[Веб-задачи](https://github.com/monin-1-lab/Unlimited-Parts/issues?q=is%3Aissue%20label%3A%22area%3A%20PUL-Web%22%20label%3A%22type%3A%20Task%22) · общий запрос по типу Task и области PUL-Web.
+[Общий запрос в Issues](https://github.com/monin-1-lab/Unlimited-Parts/issues?q=is%3Aissue%20label%3A%22area%3A%20PUL-Web%22%20label%3A%22type%3A%20Task%22) · [Сохранённое представление](https://github.com/orgs/monin-1-lab/projects/2/views/2) · [Диаграмма по исполнителям](https://github.com/orgs/monin-1-lab/projects/2/insights/1)
 
 | Задача | Исполнитель | Активность | Остаток |
 | --- | --- | --- | ---: |
