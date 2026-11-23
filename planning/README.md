@@ -28,8 +28,8 @@
 
 | Задача | Исполнитель | Активность | Остаток |
 | --- | --- | --- | ---: |
-| [#93 Добавить страницу для самых последних учебников](https://github.com/monin-1-lab/Unlimited-Parts/issues/93) | Argonaut16 | Разработка | 8 ч |
 | [#94 Оптимизация запроса к данным для последних учебников](https://github.com/monin-1-lab/Unlimited-Parts/issues/94) | Без назначения | Дизайн | 3 ч |
+| [#93 Добавить страницу для самых последних учебников](https://github.com/monin-1-lab/Unlimited-Parts/issues/93) | Argonaut16 | Разработка | 8 ч |
 
 ```mermaid
 pie showData
