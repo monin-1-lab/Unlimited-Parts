@@ -1,0 +1,64 @@
+name: Планирование PUL-Web
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - '.github/workflows/planning.yml'
+      - 'pul_web.py'
+  issues:
+    types: [edited, labeled, unlabeled, assigned, unassigned, milestoned, demilestoned, closed, reopened, opened]
+concurrency:
+  group: pul-web-planning
+  cancel-in-progress: false
+permissions:
+  contents: write
+  issues: write
+jobs:
+  planning:
+    if: github.event_name != 'issues' || contains(github.event.issue.labels.*.name, 'area: PUL-Web')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - name: Обновить бэклог и рассчитать показатели спринта
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python3 pul_web.py
+      - name: Опубликовать панель и форму пользовательской истории
+        run: |
+          mkdir -p .github/ISSUE_TEMPLATE
+          cat > .github/ISSUE_TEMPLATE/pul-backlog.yml <<'FORM'
+          name: Мой Scrum · история PUL-Web
+          description: Пользовательская история раздела обучения Parts Unlimited
+          labels: ["area: PUL-Web", "type: Product Backlog Item", "state: New"]
+          body:
+            - type: textarea
+              id: story
+              attributes:
+                label: Пользовательская история
+                description: Опишите, кто использует функцию, что делает и какой результат получает.
+              validations:
+                required: true
+            - type: textarea
+              id: acceptance
+              attributes:
+                label: Критерии приёмки
+            - type: markdown
+              attributes:
+                value: "### PartsUnlimitedGroup"
+            - type: input
+              id: pul-ticket-id
+              attributes:
+                label: Ticket ID
+                description: Внешний идентификатор обращения Parts Unlimited (PUL Ticket ID).
+                placeholder: PUG-1234
+          FORM
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add planning .github/ISSUE_TEMPLATE/pul-backlog.yml
+          if ! git diff --cached --quiet; then
+            git commit -m 'Обновить план спринта и панель PUL-Web'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
