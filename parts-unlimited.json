@@ -1,0 +1,2037 @@
+{
+  "source": "https://github.com/microsoft/AzDevOpsDemoGenerator/tree/f5802c5769c21d29b1fdf48d0f0d8c0ee25be017/src/ADOGenerator/Templates/Gen-PartsUnlimited",
+  "iterations": [
+    "Sprint 1",
+    "Sprint 2",
+    "Sprint 3",
+    "Sprint 4",
+    "Sprint 5",
+    "Sprint 6"
+  ],
+  "items": [
+    {
+      "id": 12428,
+      "type": "Epic",
+      "title": "As marketer, I want to run an A|B test on alternative Web Sites using Application Insights.",
+      "state": "New",
+      "priority": 2
+    },
+    {
+      "id": 12429,
+      "type": "Epic",
+      "title": "Shopping Cart Facility",
+      "state": "New",
+      "priority": 2
+    },
+    {
+      "id": 12430,
+      "type": "Epic",
+      "title": "Online tracking of shipments",
+      "state": "New",
+      "priority": 2
+    },
+    {
+      "id": 12431,
+      "type": "Epic",
+      "title": "Product reviews and ratings",
+      "state": "New",
+      "priority": 2
+    },
+    {
+      "id": 12432,
+      "type": "Epic",
+      "title": "Promotion and Rewards",
+      "state": "New",
+      "priority": 2
+    },
+    {
+      "id": 12433,
+      "type": "Epic",
+      "title": "Notification",
+      "state": "New",
+      "priority": 2
+    },
+    {
+      "id": 12434,
+      "type": "Epic",
+      "title": "Membership and Rewards Program",
+      "state": "New",
+      "priority": 2
+    },
+    {
+      "id": 12435,
+      "type": "Epic",
+      "title": "Customer Service",
+      "state": "New",
+      "priority": 2
+    },
+    {
+      "id": 12436,
+      "type": "Epic",
+      "title": "Product Catalog",
+      "state": "New",
+      "priority": 2
+    },
+    {
+      "id": 12437,
+      "type": "Epic",
+      "title": "Payment",
+      "state": "New",
+      "priority": 2
+    },
+    {
+      "id": 12438,
+      "type": "Epic",
+      "title": "As ops guy, I'd like to make sure I am notified anytime public availability is impacted for key user scenarios",
+      "state": "Done",
+      "priority": 2
+    },
+    {
+      "id": 12439,
+      "type": "Epic",
+      "title": "As a user i want to be able to search the PartsUnlimited Website so that i can find the products i want to purchase",
+      "state": "Done",
+      "priority": 2
+    },
+    {
+      "id": 12440,
+      "type": "Epic",
+      "title": "As a marketeer i want our website to be performant and available around the world",
+      "state": "Done",
+      "priority": 2
+    },
+    {
+      "id": 12441,
+      "type": "Epic",
+      "title": "We want to make frequent enhancements to the MRP application and need to modernize the application from its current legacy state.",
+      "state": "Done",
+      "priority": 2
+    },
+    {
+      "id": 12442,
+      "type": "Epic",
+      "title": "As ops guy, I'd like to keep the business owners happy ensuring there is no wasted spend in cloud resources.",
+      "state": "Done",
+      "priority": 2
+    },
+    {
+      "id": 12443,
+      "type": "Epic",
+      "title": "As developer, I want to use Azure Machine Learning to provide a recommendations engine behind the website.",
+      "state": "Done",
+      "priority": 2
+    },
+    {
+      "id": 12286,
+      "type": "Feature",
+      "title": "Points Accural on Purchases",
+      "state": "New",
+      "priority": 2,
+      "parent": 12434
+    },
+    {
+      "id": 12287,
+      "type": "Feature",
+      "title": "Rewards Redemption",
+      "state": "New",
+      "priority": 2,
+      "parent": 12434
+    },
+    {
+      "id": 12288,
+      "type": "Feature",
+      "title": "Ratings for purchased items",
+      "state": "New",
+      "priority": 2,
+      "parent": 12431
+    },
+    {
+      "id": 12289,
+      "type": "Feature",
+      "title": "Supplier Feedback",
+      "state": "New",
+      "priority": 2,
+      "parent": 12431
+    },
+    {
+      "id": 12290,
+      "type": "Feature",
+      "title": "Shipping charges calculation",
+      "state": "New",
+      "priority": 2,
+      "parent": 12429
+    },
+    {
+      "id": 12291,
+      "type": "Feature",
+      "title": "Delivery Options",
+      "state": "New",
+      "priority": 2,
+      "parent": 12430
+    },
+    {
+      "id": 12292,
+      "type": "Feature",
+      "title": "Order cancellation",
+      "state": "New",
+      "priority": 2,
+      "parent": 12429
+    },
+    {
+      "id": 12293,
+      "type": "Feature",
+      "title": "Order confirmation",
+      "state": "New",
+      "priority": 2,
+      "parent": 12429
+    },
+    {
+      "id": 12294,
+      "type": "Feature",
+      "title": "Delivery confirmation",
+      "state": "New",
+      "priority": 2,
+      "parent": 12430
+    },
+    {
+      "id": 12295,
+      "type": "Feature",
+      "title": "Customer notification",
+      "state": "New",
+      "priority": 2,
+      "parent": 12433
+    },
+    {
+      "id": 12296,
+      "type": "Feature",
+      "title": "As marketeer, I want us to reuse the web assets for apps on Android and iOS with corporate branding, and I will want to be able to update the device apps with every marketing promotion. That will mean using Cordova.",
+      "state": "New",
+      "sprint": "Sprint 1",
+      "priority": 2,
+      "parent": 12428
+    },
+    {
+      "id": 12297,
+      "type": "Feature",
+      "title": "Gift Options",
+      "state": "New",
+      "priority": 2,
+      "parent": 12429
+    },
+    {
+      "id": 12298,
+      "type": "Feature",
+      "title": "Ad-hoc promotions",
+      "state": "New",
+      "priority": 2,
+      "parent": 12432
+    },
+    {
+      "id": 12299,
+      "type": "Feature",
+      "title": "Customer issues",
+      "state": "New",
+      "priority": 2,
+      "parent": 12435
+    },
+    {
+      "id": 12300,
+      "type": "Feature",
+      "title": "Ask for customer feedback",
+      "state": "New",
+      "priority": 2,
+      "parent": 12435
+    },
+    {
+      "id": 12301,
+      "type": "Feature",
+      "title": "Product Recommendations",
+      "state": "New",
+      "priority": 2,
+      "parent": 12432
+    },
+    {
+      "id": 12302,
+      "type": "Feature",
+      "title": "Product catalog changes",
+      "state": "New",
+      "priority": 2,
+      "parent": 12436
+    },
+    {
+      "id": 12303,
+      "type": "Feature",
+      "title": "Credit Card Purchase",
+      "state": "New",
+      "priority": 2,
+      "parent": 12437
+    },
+    {
+      "id": 12304,
+      "type": "Feature",
+      "title": "Ops needs the ability to quickly roll back to a known good state in the event of a critical problem in production.",
+      "state": "Done",
+      "sprint": "Sprint 1",
+      "priority": 2
+    },
+    {
+      "id": 12305,
+      "type": "Feature",
+      "title": "As an Ops guy, I want to ensure that the legacy MRP system configuration is consistent.",
+      "state": "Done",
+      "sprint": "Sprint 1",
+      "priority": 2
+    },
+    {
+      "id": 12306,
+      "type": "Feature",
+      "title": "As a business owner, I would like to know how much our historical spend is to help project future spend for budgeting + financials.",
+      "state": "Done",
+      "sprint": "Sprint 1",
+      "priority": 2
+    },
+    {
+      "id": 12307,
+      "type": "Feature",
+      "title": "As a marketeer i want our website to be performant and available around the world",
+      "state": "Done",
+      "sprint": "Sprint 1",
+      "priority": 2
+    },
+    {
+      "id": 12308,
+      "type": "Product Backlog Item",
+      "title": "Provide related items or frequently bought together section when people browse or search",
+      "state": "New",
+      "priority": 2,
+      "tests": [
+        12411
+      ]
+    },
+    {
+      "id": 12309,
+      "type": "Product Backlog Item",
+      "title": "As tester, I need to test the website on all the relevant broswers and devices and be sure that it can handle our load.",
+      "state": "New",
+      "sprint": "Sprint 6",
+      "priority": 2
+    },
+    {
+      "id": 12310,
+      "type": "Product Backlog Item",
+      "title": "As a customer, I should be able to put items to shopping cart",
+      "state": "New",
+      "priority": 2,
+      "tests": [
+        12423,
+        12424,
+        12422
+      ]
+    },
+    {
+      "id": 12311,
+      "type": "Product Backlog Item",
+      "title": "As a customer, I should be able to print my purchase order",
+      "state": "New",
+      "description": "Ops needs the ability to quickly roll back to a known good state in the event of a critical problem in production.",
+      "priority": 2,
+      "tests": [
+        12417
+      ]
+    },
+    {
+      "id": 12312,
+      "type": "Product Backlog Item",
+      "title": "As a customer, I would like to have a sort capabaility by price and customer ratings",
+      "state": "New",
+      "description": "As developer, I want a clone of the Phoenix feedback and events database",
+      "sprint": "Sprint 6",
+      "priority": 1,
+      "tests": [
+        12416
+      ]
+    },
+    {
+      "id": 12313,
+      "type": "Product Backlog Item",
+      "title": "Recommended products must be based on customer purchase pattern history",
+      "state": "New",
+      "sprint": "Sprint 4",
+      "priority": 2
+    },
+    {
+      "id": 12314,
+      "type": "Product Backlog Item",
+      "title": "As a customer, I would like to save my addresses so that I can easily select the address for delivery",
+      "state": "New",
+      "sprint": "Sprint 6",
+      "priority": 2,
+      "tests": [
+        12418
+      ]
+    },
+    {
+      "id": 12315,
+      "type": "Product Backlog Item",
+      "title": "As marketer, I want to run an A|B test on alternative Web Sites using Application Insights.",
+      "state": "New",
+      "priority": 2
+    },
+    {
+      "id": 12316,
+      "type": "Product Backlog Item",
+      "title": "Provide customers the ability to track status of the package",
+      "state": "Done",
+      "sprint": "Sprint 1",
+      "priority": 2
+    },
+    {
+      "id": 12317,
+      "type": "Product Backlog Item",
+      "title": "As a customer, I would like to have the ability to send my items as gift",
+      "state": "Done",
+      "sprint": "Sprint 6",
+      "priority": 2
+    },
+    {
+      "id": 12318,
+      "type": "Product Backlog Item",
+      "title": "As a customer, I would like to store my credit card details securely",
+      "state": "Committed",
+      "description": "More information here",
+      "priority": 2,
+      "tests": [
+        12415,
+        12414,
+        12413
+      ]
+    },
+    {
+      "id": 12319,
+      "type": "Product Backlog Item",
+      "title": "As a customer, I should be able to select different shipping option",
+      "state": "Committed",
+      "description": "As a customer, I should be able to view all the shipping options available and be able to select a different shipping option other than the default option",
+      "priority": 1
+    },
+    {
+      "id": 12320,
+      "type": "Product Backlog Item",
+      "title": "As developer, I want to use Azure Machine Learning to provide a recommendations engine behind the website.",
+      "state": "Committed",
+      "priority": 1
+    },
+    {
+      "id": 12321,
+      "type": "Product Backlog Item",
+      "title": "Provide tentative duration for shipping.",
+      "state": "Committed",
+      "description": "Customers when they make the order and select the shipping method, the system should provide the tentative duration for shipping the items",
+      "sprint": "Sprint 2",
+      "priority": 2,
+      "tests": [
+        12425
+      ]
+    },
+    {
+      "id": 12322,
+      "type": "Product Backlog Item",
+      "title": "Notify the user about any changes made to the order",
+      "state": "Approved",
+      "description": "Users should be notified when there is a change to the order including shipping, delivery, price changes",
+      "sprint": "Sprint 6",
+      "priority": 2,
+      "tests": [
+        12412
+      ]
+    },
+    {
+      "id": 12323,
+      "type": "Product Backlog Item",
+      "title": "As a admin, I should be able to update prices on ad-hoc condition",
+      "state": "Approved",
+      "description": "As a admin, I should be able to update prices on ad-hoc condition. The prices should be immediately reflected on the product page. Any unconfirmed order should include the updated price",
+      "sprint": "Sprint 6",
+      "priority": 2,
+      "tests": [
+        12421
+      ]
+    },
+    {
+      "id": 12324,
+      "type": "Product Backlog Item",
+      "title": "As a customer, I would like to provide my feedback on items that I have purchased",
+      "state": "Approved",
+      "sprint": "Sprint 6",
+      "priority": 2,
+      "tests": [
+        12420
+      ]
+    },
+    {
+      "id": 12325,
+      "type": "Product Backlog Item",
+      "title": "As a customer, I would like to have a wishlist where I can add items for future purchase",
+      "state": "Approved",
+      "sprint": "Sprint 2",
+      "priority": 1,
+      "tests": [
+        12419
+      ]
+    },
+    {
+      "id": 12326,
+      "type": "Task",
+      "title": "Update navigation",
+      "state": "To Do",
+      "sprint": "Sprint 3",
+      "priority": 2
+    },
+    {
+      "id": 12327,
+      "type": "Task",
+      "title": "Add categories",
+      "state": "To Do",
+      "sprint": "Sprint 3",
+      "priority": 2
+    },
+    {
+      "id": 12328,
+      "type": "Task",
+      "title": "New bug",
+      "state": "To Do",
+      "sprint": "Sprint 3",
+      "priority": 2
+    },
+    {
+      "id": 12329,
+      "type": "Task",
+      "title": "Be sure and include a dark theme",
+      "state": "To Do",
+      "sprint": "Sprint 3",
+      "priority": 2
+    },
+    {
+      "id": 12330,
+      "type": "Task",
+      "title": "testzzz",
+      "state": "To Do",
+      "sprint": "Sprint 6",
+      "priority": 2
+    },
+    {
+      "id": 12331,
+      "type": "Task",
+      "title": "Update the prices on web pages",
+      "state": "To Do",
+      "sprint": "Sprint 6",
+      "priority": 2
+    },
+    {
+      "id": 12332,
+      "type": "Task",
+      "title": "Develop the logic to display geo dependent prices",
+      "state": "To Do",
+      "sprint": "Sprint 6",
+      "priority": 2
+    },
+    {
+      "id": 12333,
+      "type": "Task",
+      "title": "Check new pricing for lights, brakes and wheels",
+      "state": "To Do",
+      "sprint": "Sprint 6",
+      "priority": 2
+    },
+    {
+      "id": 12334,
+      "type": "Task",
+      "title": "Update product selection section to move items to wishlist",
+      "state": "To Do",
+      "description": "Automation to include creation of the SQL DB on Azure",
+      "sprint": "Sprint 2",
+      "priority": 2
+    },
+    {
+      "id": 12335,
+      "type": "Task",
+      "title": "Add Terms and Conditions for Sale & Support in Layout.cshtml Page",
+      "state": "To Do",
+      "sprint": "Sprint 4",
+      "priority": 2
+    },
+    {
+      "id": 12336,
+      "type": "Task",
+      "title": "Trial CD in staging",
+      "state": "In Progress",
+      "sprint": "Sprint 6",
+      "priority": 2
+    },
+    {
+      "id": 12337,
+      "type": "Task",
+      "title": "Approval for price change",
+      "state": "In Progress",
+      "sprint": "Sprint 6",
+      "priority": 3
+    },
+    {
+      "id": 12338,
+      "type": "Task",
+      "title": "Add wishlist page",
+      "state": "In Progress",
+      "sprint": "Sprint 2",
+      "priority": 2
+    },
+    {
+      "id": 12339,
+      "type": "Task",
+      "title": "Display price change in the product section",
+      "state": "In Progress",
+      "description": "The price change for a product should be displayed with a proper graphic depending on whether the price increase or decrease",
+      "sprint": "Sprint 6",
+      "priority": 2
+    },
+    {
+      "id": 12340,
+      "type": "Task",
+      "title": "Update price changes to unfinished orders",
+      "state": "In Progress",
+      "sprint": "Sprint 6",
+      "priority": 2
+    },
+    {
+      "id": 12341,
+      "type": "Task",
+      "title": "Design Feedback page",
+      "state": "In Progress",
+      "description": "Design the UI for a feedback section/page",
+      "sprint": "Sprint 6",
+      "priority": 2
+    },
+    {
+      "id": 12342,
+      "type": "Task",
+      "title": "Create Storyboard",
+      "state": "In Progress",
+      "description": "Create Storyboard that shows the customer experience of providing feedback",
+      "sprint": "Sprint 6",
+      "priority": 2
+    },
+    {
+      "id": 12343,
+      "type": "Task",
+      "title": "Storyboard the Dashboard",
+      "state": "Done",
+      "sprint": "Sprint 6",
+      "priority": 2
+    },
+    {
+      "id": 12344,
+      "type": "Task",
+      "title": "Develop the logic to display geo dependent prices",
+      "state": "Done",
+      "sprint": "Sprint 6",
+      "priority": 2
+    },
+    {
+      "id": 12345,
+      "type": "Task",
+      "title": "Prototype Azure WS",
+      "state": "Done",
+      "sprint": "Sprint 6",
+      "priority": 2
+    },
+    {
+      "id": 12346,
+      "type": "Task",
+      "title": "Storyboard the Azure WS",
+      "state": "Done",
+      "sprint": "Sprint 6",
+      "priority": 2
+    },
+    {
+      "id": 12347,
+      "type": "Task",
+      "title": "Create Storyboard",
+      "state": "Done",
+      "sprint": "Sprint 1",
+      "priority": 2
+    },
+    {
+      "id": 12348,
+      "type": "Task",
+      "title": "Update Orders page",
+      "state": "Done",
+      "sprint": "Sprint 1",
+      "priority": 2
+    },
+    {
+      "id": 12349,
+      "type": "Task",
+      "title": "Add shipment tracking page",
+      "state": "Done",
+      "sprint": "Sprint 1",
+      "priority": 3
+    },
+    {
+      "id": 12350,
+      "type": "Task",
+      "title": "Generate gift return slip",
+      "state": "Done",
+      "sprint": "Sprint 1",
+      "priority": 2
+    },
+    {
+      "id": 12351,
+      "type": "Task",
+      "title": "Update Gift selection page to include a message",
+      "state": "Done",
+      "sprint": "Sprint 1",
+      "priority": 2
+    },
+    {
+      "id": 12352,
+      "type": "Task",
+      "title": "Update order confirmation page",
+      "state": "Done",
+      "sprint": "Sprint 2",
+      "priority": 2
+    },
+    {
+      "id": 12353,
+      "type": "Task",
+      "title": "Calculate delivery date based on shipping method",
+      "state": "Done",
+      "sprint": "Sprint 2",
+      "priority": 2
+    },
+    {
+      "id": 12354,
+      "type": "Task",
+      "title": "Update add product section with Gift options",
+      "state": "Done",
+      "sprint": "Sprint 6",
+      "priority": 2
+    },
+    {
+      "id": 12426,
+      "type": "Bug",
+      "title": "Sel_IE_Navigate Failed in 2488",
+      "state": "New",
+      "sprint": "Sprint 3",
+      "priority": 2,
+      "parent": 12288
+    },
+    {
+      "id": 12427,
+      "type": "Bug",
+      "title": "Decline in orders noticed - Please Investigate immediately",
+      "state": "Approved",
+      "priority": 1
+    },
+    {
+      "id": 12444,
+      "type": "Test Plan",
+      "title": "PartsUnlimited-tc_TestPlan1",
+      "state": "Active",
+      "sprint": "Sprint 2",
+      "priority": 0
+    },
+    {
+      "id": 12445,
+      "type": "Test Suite",
+      "title": "PartsUnlimited-tc_TestPlan1",
+      "state": "In Progress",
+      "sprint": "Sprint 2",
+      "priority": 0
+    },
+    {
+      "id": 12446,
+      "type": "Test Suite",
+      "title": "12321 : Provide tentative duration for shipping.",
+      "state": "In Progress",
+      "sprint": "Sprint 2",
+      "priority": 0
+    },
+    {
+      "id": 12447,
+      "type": "Test Suite",
+      "title": "12308 : Provide related items or frequently bought together section when people browse or search",
+      "state": "In Progress",
+      "sprint": "Sprint 2",
+      "priority": 0
+    },
+    {
+      "id": 12448,
+      "type": "Test Suite",
+      "title": "12322 : Notify the user about any changes made to the order",
+      "state": "In Progress",
+      "sprint": "Sprint 2",
+      "priority": 0
+    },
+    {
+      "id": 12449,
+      "type": "Test Suite",
+      "title": "12318 : As a customer, I would like to store my credit card details securely",
+      "state": "In Progress",
+      "sprint": "Sprint 2",
+      "priority": 0
+    },
+    {
+      "id": 12450,
+      "type": "Test Suite",
+      "title": "12312 : As a customer, I would like to have a sort capabaility by price and customer ratings",
+      "state": "In Progress",
+      "sprint": "Sprint 2",
+      "priority": 0
+    },
+    {
+      "id": 12451,
+      "type": "Test Suite",
+      "title": "12311 : As a customer, I should be able to print my purchase order",
+      "state": "In Progress",
+      "sprint": "Sprint 2",
+      "priority": 0
+    },
+    {
+      "id": 12452,
+      "type": "Test Suite",
+      "title": "12314 : As a customer, I would like to save my addresses so that I can easily select the address for delivery",
+      "state": "In Progress",
+      "sprint": "Sprint 2",
+      "priority": 0
+    },
+    {
+      "id": 12453,
+      "type": "Test Suite",
+      "title": "12325 : As a customer, I would like to have a wishlist where I can add items for future purchase",
+      "state": "In Progress",
+      "sprint": "Sprint 2",
+      "priority": 0
+    },
+    {
+      "id": 12454,
+      "type": "Test Suite",
+      "title": "12324 : As a customer, I would like to provide my feedback on items that I have purchased",
+      "state": "In Progress",
+      "sprint": "Sprint 2",
+      "priority": 0
+    },
+    {
+      "id": 12455,
+      "type": "Test Suite",
+      "title": "12323 : As a admin, I should be able to update prices on ad-hoc condition",
+      "state": "In Progress",
+      "sprint": "Sprint 2",
+      "priority": 0
+    },
+    {
+      "id": 12456,
+      "type": "Test Suite",
+      "title": "12310 : As a customer, I should be able to put items to shopping cart",
+      "state": "In Progress",
+      "sprint": "Sprint 2",
+      "priority": 0
+    },
+    {
+      "id": 12355,
+      "type": "Test Case",
+      "title": "Enable reviews",
+      "state": "Ready",
+      "priority": 3,
+      "steps": [
+        {
+          "action": "Start application",
+          "expected": ""
+        },
+        {
+          "action": "Go to reviews",
+          "expected": ""
+        },
+        {
+          "action": "add a review @review",
+          "expected": ""
+        },
+        {
+          "action": "add a question",
+          "expected": ""
+        },
+        {
+          "action": "Add a kudo",
+          "expected": ""
+        },
+        {
+          "action": "Close",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": 12356,
+      "type": "Test Case",
+      "title": "Verify Branding",
+      "state": "Ready",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Go to Page1",
+          "expected": ""
+        },
+        {
+          "action": "Check the brand at the top left corner",
+          "expected": "Brand is represented correctly"
+        }
+      ]
+    },
+    {
+      "id": 12357,
+      "type": "Test Case",
+      "title": "As a customer, I should be able to browse the web site",
+      "state": "Ready",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Goto http://partsunlimiteddev.azurewebsites.net/",
+          "expected": ""
+        },
+        {
+          "action": "Click Brakes",
+          "expected": "Brakes will be shown"
+        },
+        {
+          "action": "Click Lighting",
+          "expected": "Lighting will be shown"
+        },
+        {
+          "action": "Click Batteries",
+          "expected": "Batteries will be shown"
+        },
+        {
+          "action": "",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": 12358,
+      "type": "Test Case",
+      "title": "A new test case",
+      "state": "Design",
+      "priority": 2
+    },
+    {
+      "id": 12359,
+      "type": "Test Case",
+      "title": "Underwater device Versions",
+      "state": "Design",
+      "priority": 2
+    },
+    {
+      "id": 12360,
+      "type": "Test Case",
+      "title": "Test CD Runs",
+      "state": "Design",
+      "priority": 2
+    },
+    {
+      "id": 12361,
+      "type": "Test Case",
+      "title": "Corbin Test",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "one",
+          "expected": ""
+        },
+        {
+          "action": "two",
+          "expected": ""
+        },
+        {
+          "action": "sdafkj",
+          "expected": ""
+        },
+        {
+          "action": "af",
+          "expected": ""
+        },
+        {
+          "action": "asdf",
+          "expected": ""
+        },
+        {
+          "action": "",
+          "expected": ""
+        },
+        {
+          "action": "",
+          "expected": ""
+        },
+        {
+          "action": "sdafasdfasdf",
+          "expected": ""
+        },
+        {
+          "action": "",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": 12362,
+      "type": "Test Case",
+      "title": "Verify new category navigation and IA is working as expected",
+      "state": "Design",
+      "priority": 2
+    },
+    {
+      "id": 12363,
+      "type": "Test Case",
+      "title": "please make sure Oil is branding",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Click on link 'Lighting'.",
+          "expected": ""
+        },
+        {
+          "action": "Click on link 'Wheels & Tires'.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": 12364,
+      "type": "Test Case",
+      "title": "IOT Telemetry of products",
+      "state": "Design",
+      "priority": 2
+    },
+    {
+      "id": 12365,
+      "type": "Test Case",
+      "title": "Navigation Test Case",
+      "state": "Design",
+      "priority": 1
+    },
+    {
+      "id": 12366,
+      "type": "Test Case",
+      "title": "Test Azure Creation",
+      "state": "Design",
+      "priority": 1
+    },
+    {
+      "id": 12367,
+      "type": "Test Case",
+      "title": "Test CD Runs",
+      "state": "Design",
+      "priority": 1
+    },
+    {
+      "id": 12368,
+      "type": "Test Case",
+      "title": "Reviews",
+      "state": "Design",
+      "priority": 4,
+      "steps": [
+        {
+          "action": "Start App",
+          "expected": ""
+        },
+        {
+          "action": "Go to tires",
+          "expected": ""
+        },
+        {
+          "action": "Add a Review",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": 12369,
+      "type": "Test Case",
+      "title": "Test CI Runs",
+      "state": "Design",
+      "priority": 2
+    },
+    {
+      "id": 12370,
+      "type": "Test Case",
+      "title": "Native App versions",
+      "state": "Design",
+      "priority": 2
+    },
+    {
+      "id": 12371,
+      "type": "Test Case",
+      "title": "Performance of purchasing",
+      "state": "Design",
+      "priority": 2
+    },
+    {
+      "id": 12372,
+      "type": "Test Case",
+      "title": "Internationalization Test Case",
+      "state": "Design",
+      "priority": 2
+    },
+    {
+      "id": 12373,
+      "type": "Test Case",
+      "title": "Response SLA verifcatino",
+      "state": "Design",
+      "priority": 2
+    },
+    {
+      "id": 12374,
+      "type": "Test Case",
+      "title": "Performance of Categories",
+      "state": "Design",
+      "priority": 2
+    },
+    {
+      "id": 12375,
+      "type": "Test Case",
+      "title": "Test CI Runs",
+      "state": "Design",
+      "priority": 2
+    },
+    {
+      "id": 12376,
+      "type": "Test Case",
+      "title": "Test Azure Website Creation",
+      "state": "Design",
+      "priority": 4
+    },
+    {
+      "id": 12377,
+      "type": "Test Case",
+      "title": "Test End to End Automation",
+      "state": "Design",
+      "priority": 4
+    },
+    {
+      "id": 12378,
+      "type": "Test Case",
+      "title": "please tgest new tire category ...in green",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Click on link 'Lighting'.",
+          "expected": ""
+        },
+        {
+          "action": "Click on link 'Wheels & Tires'.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": 12379,
+      "type": "Test Case",
+      "title": "Capacity verification",
+      "state": "Design",
+      "priority": 2
+    },
+    {
+      "id": 12380,
+      "type": "Test Case",
+      "title": "VS Bug",
+      "state": "Design",
+      "priority": 1
+    },
+    {
+      "id": 12381,
+      "type": "Test Case",
+      "title": "Verify clone baseline functionality",
+      "state": "Design",
+      "priority": 2
+    },
+    {
+      "id": 12382,
+      "type": "Test Case",
+      "title": "Shopping using categories Test Case",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Go to browser",
+          "expected": "Home page is displyed"
+        }
+      ]
+    },
+    {
+      "id": 12383,
+      "type": "Test Case",
+      "title": "As a customer I would be able to browse the site",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Open www.surface.com",
+          "expected": ""
+        },
+        {
+          "action": "press down scroll",
+          "expected": "Scroll should work"
+        }
+      ]
+    },
+    {
+      "id": 12384,
+      "type": "Test Case",
+      "title": "The customer should be able to place an item to the cart",
+      "state": "Design",
+      "priority": 2
+    },
+    {
+      "id": 12385,
+      "type": "Test Case",
+      "title": "As a customer, I should be able to login",
+      "state": "Design",
+      "priority": 2
+    },
+    {
+      "id": 12386,
+      "type": "Test Case",
+      "title": "As a customer, I should be able to login",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "start app",
+          "expected": ""
+        },
+        {
+          "action": "go to here",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": 12387,
+      "type": "Test Case",
+      "title": "As a consumer, I want to be able to add a coupon code to my purchase",
+      "state": "Design",
+      "priority": 2,
+      "steps": []
+    },
+    {
+      "id": 12388,
+      "type": "Test Case",
+      "title": "New test",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Launch browser",
+          "expected": ""
+        },
+        {
+          "action": "Go to www.partsunlimited.com",
+          "expected": ""
+        },
+        {
+          "action": "",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": 12389,
+      "type": "Test Case",
+      "title": "Verify that only managers c an have hierarchical backlog.",
+      "state": "Design",
+      "priority": 2
+    },
+    {
+      "id": 12390,
+      "type": "Test Case",
+      "title": "Product Load Verification",
+      "state": "Design",
+      "priority": 2
+    },
+    {
+      "id": 12391,
+      "type": "Test Case",
+      "title": "Mobile verification",
+      "state": "Design",
+      "priority": 2
+    },
+    {
+      "id": 12392,
+      "type": "Test Case",
+      "title": "Battery Test CAse",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Click on link 'Batteries'.",
+          "expected": ""
+        },
+        {
+          "action": "Click on 'Batteries 12-Volt Calcium Battery $129.99 Shop Now Spiral Coil Battery $154.99 Shop Now Jumper Leads $16.99 Shop Now '.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": 12393,
+      "type": "Test Case",
+      "title": "Sachin please test the new categories",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "open aap",
+          "expected": ""
+        },
+        {
+          "action": "adsfkj",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": 12394,
+      "type": "Test Case",
+      "title": "Verify the performance impact of loarge file loads are wiythin the specified limits",
+      "state": "Design",
+      "priority": 2
+    },
+    {
+      "id": 12395,
+      "type": "Test Case",
+      "title": "Verify the large file loads",
+      "state": "Design",
+      "priority": 2
+    },
+    {
+      "id": 12396,
+      "type": "Test Case",
+      "title": "Verify CDNsetup works",
+      "state": "Design",
+      "priority": 2
+    },
+    {
+      "id": 12397,
+      "type": "Test Case",
+      "title": "Verify that cloning works decoupled form Phoenix legacy team. New Test",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Goto main page",
+          "expected": ""
+        },
+        {
+          "action": "Login",
+          "expected": "Successful Login"
+        }
+      ]
+    },
+    {
+      "id": 12398,
+      "type": "Test Case",
+      "title": "Verify by clicking on Login redirecting the user to login page",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Launch the Application.",
+          "expected": "Clicking on login should redirect the user to login page"
+        },
+        {
+          "action": "Click on Login link found in right-top corner of home page.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": 12399,
+      "type": "Test Case",
+      "title": "Verify succesfull login. Pre-requisite: Valid email and password",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Login to the application.",
+          "expected": "Succesfull login and user should land in home page from his/her logged-in account."
+        }
+      ]
+    },
+    {
+      "id": 12400,
+      "type": "Test Case",
+      "title": "Verify succesfull login. Pre-requisite: Valid email and password",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Login to the application.",
+          "expected": "Succesfull login and user should land in home page from his/her logged-in account."
+        },
+        {
+          "action": "Click on Login link found in right-top corner of home page.",
+          "expected": ""
+        },
+        {
+          "action": "Type in Email and Password.",
+          "expected": ""
+        },
+        {
+          "action": "Click on LOGIN button.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": 12401,
+      "type": "Test Case",
+      "title": "Verify by clicking on Register as new user? redirecting the user to registration page",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Launch the Application.",
+          "expected": "Clicking on Register as new user? should redirect the user to Registration page"
+        },
+        {
+          "action": "Click on Login link found in right-top corner of home page.",
+          "expected": ""
+        },
+        {
+          "action": "Click on Register as new user? link.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": 12402,
+      "type": "Test Case",
+      "title": "Verify succesfull Registration. Pre-requisite: Valid email",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Login to the application.",
+          "expected": "Register Confirmation message should display."
+        },
+        {
+          "action": "Click on Login link found in right-top corner of home page.",
+          "expected": ""
+        },
+        {
+          "action": "Click on Register as new user? link.",
+          "expected": ""
+        },
+        {
+          "action": "Type in email, password and confirm password.",
+          "expected": ""
+        },
+        {
+          "action": "Click on REGISTER button.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": 12403,
+      "type": "Test Case",
+      "title": "Verify user email confirmation by clicking the link Click here to confirm your email Pre-requisite: Valid email",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Login to the application.",
+          "expected": "Confirm email message should display."
+        },
+        {
+          "action": "Click on Login link found in right-top corner of home page.",
+          "expected": ""
+        },
+        {
+          "action": "Click on Register as new user? link.",
+          "expected": ""
+        },
+        {
+          "action": "Type in email, password and confirm password.",
+          "expected": ""
+        },
+        {
+          "action": "Click on REGISTER button. Click on link => Click here to confirm your email",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": 12404,
+      "type": "Test Case",
+      "title": "Verify any input data entered returns proper results.",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Launch the application.",
+          "expected": "Any input data entered should return proper results."
+        }
+      ]
+    },
+    {
+      "id": 12405,
+      "type": "Test Case",
+      "title": "Verify any input data entered returns proper results/error message guiding to enter the correct input.",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Click on Search icon.",
+          "expected": ""
+        },
+        {
+          "action": "Type in any data in search field.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": 12406,
+      "type": "Test Case",
+      "title": "Verify search results change according to the input",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Launch the application. Type in any data in search field. Click on Search icon. Again, alter the search input and click on search icon.",
+          "expected": "Any input data entered should return proper results."
+        },
+        {
+          "action": "",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": 12407,
+      "type": "Test Case",
+      "title": "Verify any input data entered returns proper message when no results found.",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": ". Launch the application.",
+          "expected": "Any input data entered should return proper message."
+        },
+        {
+          "action": "Type in any data in search field for which no results exist",
+          "expected": ""
+        },
+        {
+          "action": "Click on Search icon.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": 12408,
+      "type": "Test Case",
+      "title": "Verify clicking on logo redirects user to home page.",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Launch the application.",
+          "expected": "Clicking on logo should redirect the user to home page"
+        },
+        {
+          "action": "Navigate to any page.",
+          "expected": ""
+        },
+        {
+          "action": "Click on application logo.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": 12409,
+      "type": "Test Case",
+      "title": "Verify by adding product to cart page.",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Launch the application.",
+          "expected": "Selected product should add to user cart."
+        },
+        {
+          "action": "Navigate to any page.",
+          "expected": ""
+        },
+        {
+          "action": "Nvigate to any product details page.",
+          "expected": ""
+        },
+        {
+          "action": "Click on ADD TO CART button.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": 12410,
+      "type": "Test Case",
+      "title": "Verify by removing product from cart page.",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Launch the application.",
+          "expected": "Selected product should remove from user cart"
+        },
+        {
+          "action": "Navigate to any page.",
+          "expected": ""
+        },
+        {
+          "action": "Nvigate to any product details page.",
+          "expected": ""
+        },
+        {
+          "action": "Click on ADD TO CART button.",
+          "expected": ""
+        },
+        {
+          "action": "From cart page, click on REMOVE button.",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": 12411,
+      "type": "Test Case",
+      "title": "Verify that the items are displayed in the Frequently Bought section.",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Launch the application and login into the application as a customer",
+          "expected": "Customer should be able to login into the application as an Customer."
+        },
+        {
+          "action": "Search for the product by entering the product name on the search bar",
+          "expected": "Product based on the search results should be displayed."
+        },
+        {
+          "action": "Select the product which user wishes to purchase",
+          "expected": "On selecting the product, user should get navigated to \"Product details\" screen."
+        },
+        {
+          "action": "Perform a scroll on the product details screen",
+          "expected": "User should be able to view the list of frequently purchased items under Frequently Bought section"
+        }
+      ]
+    },
+    {
+      "id": 12412,
+      "type": "Test Case",
+      "title": "Verify that a notification is sent out to the user when there are changes to the order",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Launch the application and login into the application as a customer",
+          "expected": "Customer should be able to login into the application as an Customer."
+        },
+        {
+          "action": "Search for the product by entering the product name on the search bar",
+          "expected": "Product based on the search results should be displayed."
+        },
+        {
+          "action": "Select the product and add the product to Cart, From the cart screen, click on Proceed to Checkout button and make the payment",
+          "expected": "Order should be successfully placed and order number should be generated."
+        },
+        {
+          "action": "Logout from the application and login as an admin",
+          "expected": "User should be able to login as admin"
+        },
+        {
+          "action": "Search for the product for which user had generated an order",
+          "expected": "Results should be displayed based on the product search criteria."
+        },
+        {
+          "action": "Click on Edit description tab and change the product price and click on Save button",
+          "expected": "a. Updated product price should be saved b. An email and an SMS notification on the price change should be sent out to the User who has ordered the product."
+        }
+      ]
+    },
+    {
+      "id": 12413,
+      "type": "Test Case",
+      "title": "Verify that user is allowed to save his credit card detail",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Launch the application and login into the application as a customer",
+          "expected": "User should be able to login into the application as an Customer."
+        },
+        {
+          "action": "Click on the Profile and select Saved Cards",
+          "expected": "User should be navigated to Saved cards page."
+        },
+        {
+          "action": "Click on ADD button to add new card details",
+          "expected": ""
+        },
+        {
+          "action": "Enter the Credit Card number, Expiry date, CVV number and Card holders name and click on Save button",
+          "expected": "Customers card details should be saved successfully."
+        }
+      ]
+    },
+    {
+      "id": 12414,
+      "type": "Test Case",
+      "title": "Verify that user is not allowed to save invalid credit card details",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Launch the application and login into the application as a customer",
+          "expected": "Customer should be able to login into the application with his credentials"
+        },
+        {
+          "action": "Click on the Profile and select Saved Cards",
+          "expected": "Customer should get navigated to Saved cards page."
+        },
+        {
+          "action": "Click on ADD button to add new card details and enter invalid card details, Click on Save button",
+          "expected": "Customer should not be allowed to save the invalid card details"
+        }
+      ]
+    },
+    {
+      "id": 12415,
+      "type": "Test Case",
+      "title": "Verify that user is allowed to edit and save his valid credit card details",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Launch the application and login into the application as a customer",
+          "expected": "Customer should be able to login into the application as an Customer."
+        },
+        {
+          "action": "Click on the Profile and select Saved Cards",
+          "expected": "Customer should get navigated to Saved cards page."
+        },
+        {
+          "action": "Click on the already added card number and Edit the card details",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": 12416,
+      "type": "Test Case",
+      "title": "Verify that user should be able to sort the products based on Price and Customer ratings",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Launch the application and login into the application as a customer",
+          "expected": "User should be able to login into the application with his credentials."
+        },
+        {
+          "action": "Search for the product by entering the product name on the search bar",
+          "expected": "Results should be displayed based on the search criteria"
+        },
+        {
+          "action": "Click on the Price dropdown and select \"Low to High\" option",
+          "expected": "Search results should be displayed based on lowest price to highest price."
+        },
+        {
+          "action": "Click on the Customer Ratings dropdown and select 3 star ratings",
+          "expected": "Search results should display product with 3 star customer ratings."
+        }
+      ]
+    },
+    {
+      "id": 12417,
+      "type": "Test Case",
+      "title": "Verify that as a customer, user should be able to print the purchase order",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Launch the application and login into the application as a customer",
+          "expected": "User should be able to login into the application with his credentials"
+        },
+        {
+          "action": "Click on the Profile icon and select \"Order\"",
+          "expected": "User should be navigated to Orders screen with list of orders from the logged in Customer"
+        },
+        {
+          "action": "Click on the Order number which customer wants to print",
+          "expected": "User should be navigated to Orders details screen."
+        },
+        {
+          "action": "Click on the Print button on the order details screen",
+          "expected": "Print preview page should be displayed and Customer should be able print the order page."
+        }
+      ]
+    },
+    {
+      "id": 12418,
+      "type": "Test Case",
+      "title": "Verify that customer is allowed to add address for shipping.",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Launch the application and login into the application as a customer",
+          "expected": "User should be able to login with his credentials"
+        },
+        {
+          "action": "Click on the Profile icon and select \"Shipping Address \"",
+          "expected": "User should be navigated to Shipping Address screen."
+        },
+        {
+          "action": "Click on Add button to add the Shipping information, Enter the Shipping information",
+          "expected": "User should be able to view and should be able to select the saved address."
+        },
+        {
+          "action": "Click on Save button to save the details.",
+          "expected": "Details should be validated and saved"
+        }
+      ]
+    },
+    {
+      "id": 12419,
+      "type": "Test Case",
+      "title": "Validate that customer is able to add an item to the wishlist",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Launch the application and login into the application as a Customer",
+          "expected": "User should be able to login to the application with his credentials"
+        },
+        {
+          "action": "Click on the Categories which user is interested in",
+          "expected": "User should be able to see the category list"
+        },
+        {
+          "action": "Hover on the item and click on the \"Add to Wishlist\" button",
+          "expected": "Selected item should be displayed in the Wishlist page."
+        },
+        {
+          "action": "Click on the Profile icon and select \"Wish list\" option",
+          "expected": "User should be able to see the added item in the \"Wishlist\" section"
+        },
+        {
+          "action": "",
+          "expected": ""
+        }
+      ]
+    },
+    {
+      "id": 12420,
+      "type": "Test Case",
+      "title": "Validate that customer is allowed to add an feedback to the item purchases",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Launch the application and login as an customer",
+          "expected": "User should be able to login to the site with his credentials"
+        },
+        {
+          "action": "Click on the Categories which user is interested in and hover on the image and click on Shop Now button",
+          "expected": "User should be able to hover, see the \"Shop Now\" image and click on it"
+        },
+        {
+          "action": "Click on Add to Cart button on the item page",
+          "expected": "Item should be added to cart"
+        },
+        {
+          "action": "Click on Checkout button and enter Shipping information",
+          "expected": "User should be able to enter details"
+        },
+        {
+          "action": "Click on \"Submit Order\" button",
+          "expected": "User should be able to submit his order successfully"
+        },
+        {
+          "action": "Once order is placed, click on the Profile icon and select View order option",
+          "expected": "View Order option should be visible in the User Profile"
+        },
+        {
+          "action": "Specify the search criteria, either by order number or by order dates",
+          "expected": "User should be able to see the orders or by dates or order"
+        },
+        {
+          "action": "Click on the Order number displayed in the search result",
+          "expected": "Order number should be able to get selected"
+        },
+        {
+          "action": "Click on the Feedback link and enter the review comments in the feedback form and click on Save button",
+          "expected": "Added feedback should get posted against the respective item"
+        }
+      ]
+    },
+    {
+      "id": 12421,
+      "type": "Test Case",
+      "title": "Verify that Admin is able to change the price of the item",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Launch the application and login as Admin",
+          "expected": "Admin should be able to login to the application with his credentials"
+        },
+        {
+          "action": "On navigating to Home screen, click on the Admin icon and select Manage items",
+          "expected": "Admin should be able to see the Manage Items icon in the Home screen"
+        },
+        {
+          "action": "On the Store manager page, Click on the \"Edit\" link against the item which admin wants to update.",
+          "expected": "Admin should be able to edit the item link"
+        },
+        {
+          "action": "On item edit page, update the Price and Sale price and click on the Save button",
+          "expected": "On successful update, updated price should reflect on the Store manager screen against the respective item"
+        }
+      ]
+    },
+    {
+      "id": 12422,
+      "type": "Test Case",
+      "title": "Verify that Customer is able to add an item into the shopping cart",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Launch the application and login as a Customer",
+          "expected": "User should be able to login with his credentials"
+        },
+        {
+          "action": "Click on the Categories which user is interested in",
+          "expected": "Products available under the category should be displayed"
+        },
+        {
+          "action": "Hover on the images of items under the selected category and click on Shop Now button",
+          "expected": "User should be able to navigate to Product Details screen"
+        },
+        {
+          "action": "Click on the \"ADD TO CART\" button on the prodcut description page",
+          "expected": "On adding item to cart, User should be able to see the added item in the Cart Page"
+        }
+      ]
+    },
+    {
+      "id": 12423,
+      "type": "Test Case",
+      "title": "Verify that user is able to add multiple items into the shopping cart",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Launch the application and login into the application as a Customer",
+          "expected": "Customer should be able to login into the application with his credentials."
+        },
+        {
+          "action": "Click on the Categories which user is interested in",
+          "expected": "Products available under the category should be displayed"
+        },
+        {
+          "action": "Hover on the images of items under the selected category and click on Shop Now button",
+          "expected": "User should be able to navigate to Product Details screen"
+        },
+        {
+          "action": "Click on the \"ADD TO CART\" button on the Product description page",
+          "expected": "On adding item to cart, User should be able to see the added item in the Cart Page Count on the cart icon should be displayed based on the number of items added to the cart."
+        },
+        {
+          "action": "Go back to the home screen click on the categories, Hover on the images and click on the Shop now button",
+          "expected": "User should be able to navigate to Product Details screen"
+        },
+        {
+          "action": "Click on \"ADD TO CART\" button to add the item",
+          "expected": "On adding an item to cart, Count on the Cart icon should be increased and the added item should be displayed in Cart Page."
+        }
+      ]
+    },
+    {
+      "id": 12424,
+      "type": "Test Case",
+      "title": "Verify that user is able to remove the item from cart",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Launch the application and login into the application as a Customer",
+          "expected": "Customer should be able to login into the application with his credentials"
+        },
+        {
+          "action": "Click on the Categories which user is interested in",
+          "expected": "Products available under the category should be displayed"
+        },
+        {
+          "action": "Hover on the images of items under the selected category and click on Shop Now button",
+          "expected": "User should be able to navigate to Product Details screen"
+        },
+        {
+          "action": "Click on the \"ADD TO CART\" button on the Product description page.",
+          "expected": "On adding item to cart, User should be able to see the added item in the Cart Page Count on the cart icon should be displayed based on the number of items added to the cart."
+        },
+        {
+          "action": "Click on the Cart icon on the home page.",
+          "expected": "User should get navigated to \"Cart Page\""
+        },
+        {
+          "action": "Click on the Remove button on the cart page against the item which user wants to remove.",
+          "expected": "On removing the item, count on the cart icon should be decreased and the item should be removed from Cart page."
+        }
+      ]
+    },
+    {
+      "id": 12425,
+      "type": "Test Case",
+      "title": "Verify that the tentative date is displayed for shipping the product",
+      "state": "Design",
+      "priority": 2,
+      "steps": [
+        {
+          "action": "Launch the application and login",
+          "expected": "Customer should be able to login into the application with his credentials"
+        },
+        {
+          "action": "Click on the Categories which user is interested in",
+          "expected": "Products available under the category should be displayed"
+        },
+        {
+          "action": "Hover on the images of items under the selected category and click on Shop Now link",
+          "expected": "User should be able to navigate to Product Details screen"
+        },
+        {
+          "action": "Click on the \"ADD TO CART\" button on the Product description page",
+          "expected": "User should get navigated to Shopping Cart screen"
+        },
+        {
+          "action": "Enter the Valid pin code in the pin code field",
+          "expected": "Based on the pincode entered, tentative dates for shipping the product should be displayed."
+        }
+      ]
+    }
+  ]
+}
