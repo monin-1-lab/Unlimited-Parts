@@ -78,11 +78,23 @@ def main():
             api(f"issues/{row['number']}", "PATCH", {"state": "closed", "state_reason": "completed"})
         print(f"{key} -> #{row['number']}", flush=True)
 
-    actual = imported_issues()
     expected = {i["id"] for i in work}
+    expected_closed = {i["id"] for i in work if i["state"] == "Done"}
+    actual = imported_issues()
+    for key in sorted(expected):
+        row = actual.get(key)
+        if row is None or (row["state"] == "closed") != (key in expected_closed):
+            # The repository-wide list can lag behind individual issue updates.
+            row = api(f"issues/{issues[key]['number']}")
+            marker = MARKER.search(row.get("body") or "")
+            if marker and int(marker[1]) == key:
+                actual[key] = row
     if set(actual) != expected:
         raise ValueError("The imported IDs differ from the fixture")
-    closed = sum(actual[k]["state"] == "closed" for k in expected)
+    closed_ids = {key for key, row in actual.items() if row["state"] == "closed"}
+    if closed_ids != expected_closed:
+        raise ValueError("The issue states differ from the fixture")
+    closed = len(closed_ids)
     report = (f"Созданный стенд содержит {len(actual)} рабочих элементов: "
               f"{len(actual) - closed} открытых, {closed} закрытых. "
               f"В шаблоне {len(DATA['iterations'])} спринтов.\n")
