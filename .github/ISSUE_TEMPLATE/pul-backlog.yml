@@ -1,0 +1,24 @@
+name: Мой Scrum · история PUL-Web
+description: Пользовательская история раздела обучения Parts Unlimited
+labels: ["area: PUL-Web", "type: Product Backlog Item", "state: New"]
+body:
+  - type: textarea
+    id: story
+    attributes:
+      label: Пользовательская история
+      description: Опишите, кто использует функцию, что делает и какой результат получает.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Критерии приёмки
+  - type: markdown
+    attributes:
+      value: "### PartsUnlimitedGroup"
+  - type: input
+    id: pul-ticket-id
+    attributes:
+      label: Ticket ID
+      description: Внешний идентификатор обращения Parts Unlimited (PUL Ticket ID).
+      placeholder: PUG-1234
