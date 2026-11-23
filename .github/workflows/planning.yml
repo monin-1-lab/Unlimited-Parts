@@ -15,7 +15,8 @@ permissions:
   issues: write
 jobs:
   planning:
-    if: github.event_name != 'issues' || contains(github.event.issue.labels.*.name, 'area: PUL-Web')
+    if: >-
+      github.event_name != 'issues' || contains(github.event.issue.labels.*.name, 'area: PUL-Web')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
